@@ -98,10 +98,10 @@ var Game = setInterval(()=>{
     var drop = 0;
 
     if(ballTop <= 0){
-        alert("Game over!!! Score is "+ (level));
+        alert("Game over!!! Score is "+ (level) + ". Click OK to restart");
         clearInterval(Game);
         document.cookie = "HIGHEST LEVEL REACHED:" + highestLevel;
-        // window.location.reload();
+        window.location.reload();
     }
 
     for(let i = 0; i<blocks.length;i++){
